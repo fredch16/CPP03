@@ -6,7 +6,7 @@
 #    By: fredchar <fredchar@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/27 16:31:00 by fredchar          #+#    #+#              #
-#    Updated: 2025/12/10 12:02:00 by fredchar         ###   ########.fr        #
+#    Updated: 2025/12/10 12:39:47 by fredchar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,6 +24,7 @@ NC := \033[0m # No Color
 SRCS :=			main.cpp \
 				ClapTrap.cpp \
 				ScavTrap.cpp \
+				FragTrap.cpp \
 
 OBJS := $(SRCS:%.cpp=$(OBJD)/%.o)
 

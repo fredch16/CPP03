@@ -6,39 +6,37 @@
 /*   By: fredchar <fredchar@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/03 22:09:08 by fredchar          #+#    #+#             */
-/*   Updated: 2025/12/10 12:03:56 by fredchar         ###   ########.fr       */
+/*   Updated: 2025/12/10 12:42:20 by fredchar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
+#include "FragTrap.hpp"
 #include "ScavTrap.hpp"
 
 int main()
 {
-    std::cout << "\n--- ClapTrap basic test ---\n";
-    ClapTrap a("Alpha");
-    a.attack("Target");
-    a.takeDamage(5);
-    a.beRepaired(3);
-
-    std::cout << "\n--- ScavTrap basic test ---\n";
+    std::cout << "\n--- ScavTrap Test ---\n";
     ScavTrap s("Scavy");
-    s.attack("Target");
-    s.takeDamage(20);
-    s.beRepaired(10);
     s.guardGate();
 
-    std::cout << "\n--- Copy tests ---\n";
-    ScavTrap original("Orig");
+    std::cout << "\n--- FragTrap Test ---\n";
+    FragTrap f("Fragger");
+    f.highFivesGuys();
+
+    std::cout << "\n--- Copy Tests ---\n";
+    ScavTrap original("Orig"), assigned("Temp");
     ScavTrap copy(original);   // copy constructor
-    ScavTrap assigned("Temp");
     assigned = original;       // copy assignment
 
-    std::cout << "\n--- Edge cases ---\n";
+    FragTrap fragg("frag");
+    FragTrap copyfrag(fragg); // copy constructor
+
+    std::cout << "\n--- Edge Case ---\n";
     ScavTrap e("Edge");
-    e.takeDamage(200);         // dies
-    e.attack("Nobody");        // can't
-    e.beRepaired(10);          // can't
+    e.takeDamage(200);  // dies
+    e.attack("Nobody"); // can't
+    e.beRepaired(10);   // can't
 
     std::cout << "\nDone.\n";
     return 0;
