@@ -6,11 +6,11 @@
 #    By: fredchar <fredchar@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/27 16:31:00 by fredchar          #+#    #+#              #
-#    Updated: 2025/12/10 12:39:47 by fredchar         ###   ########.fr        #
+#    Updated: 2025/12/10 14:38:58 by fredchar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME := ScavTraps
+NAME := FragTraps
 CC := c++
 CFLAGS := -Wall -Wextra -Werror -g -std=c++17
 OBJD := obj
