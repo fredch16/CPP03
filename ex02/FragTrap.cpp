@@ -6,7 +6,7 @@
 /*   By: fredchar <fredchar@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/09 17:37:30 by fredchar          #+#    #+#             */
-/*   Updated: 2025/12/10 12:39:41 by fredchar         ###   ########.fr       */
+/*   Updated: 2025/12/10 14:38:02 by fredchar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 FragTrap::FragTrap(std::string name) : ClapTrap(name)
 {
 	_hp = 100;
-	_ep = 30;
+	_ep = 100;
 	_atkdmg = 30;
 	std::cout << "FragTrap constructor called" << std::endl;
 }
