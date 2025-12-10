@@ -6,7 +6,7 @@
 /*   By: fredchar <fredchar@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/09 16:23:52 by fredchar          #+#    #+#             */
-/*   Updated: 2025/12/10 12:05:20 by fredchar         ###   ########.fr       */
+/*   Updated: 2025/12/10 14:23:13 by fredchar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,4 +83,5 @@ void ClapTrap::beRepaired(unsigned int amount)
 	}
 	std::cout << "ClapTrap" << this->_name << " repairs itself for " << amount << " health" << std::endl;
 	this->_ep--;
+	this->_hp += amount;
 }
